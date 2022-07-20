@@ -156,3 +156,26 @@ body {
 .main-right .card .card-body .count span {
   margin: 0 3rem 0 1rem;
 }
+/* Fixture Section Styling */
+.card-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 53px 30px 20px 30px;
+  gap: 1rem;
+}
+
+.main-right .card .card-body h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #161616;
+}
+.main-right .card .card-body p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #4d4d4d;
+}
