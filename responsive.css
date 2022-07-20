@@ -1,0 +1,35 @@
+@media only screen and (max-width: 1200px) {
+  .hero-left h1 {
+    font-size: 4rem;
+    line-height: 50px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  /* html {
+    font-size: 55%;
+  } */
+  .main {
+    flex-direction: column;
+  }
+  .main-left {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    gap: 2rem;
+  }
+  .main-right {
+    grid-template-columns: repeat(2, calc((100% / 2) - 1.6rem));
+  }
+}
+@media only screen and (max-width: 576px) {
+  .main-left {
+    flex-direction: column;
+  }
+  .main-left button {
+    margin: auto;
+  }
+  .main-right {
+    grid-template-columns: 1fr;
+  }
+}

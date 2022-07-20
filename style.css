@@ -17,19 +17,20 @@ body {
   max-width: 120rem;
   width: 100%;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 .hero {
   display: flex;
   background-color: #161616;
   gap: 2.4rem;
   justify-content: center;
-  align-items: center;
   border-radius: 3rem;
   padding: 3.3rem 7.9rem 0 12rem;
   margin-top: 3rem;
 }
 .hero-left {
   flex-basis: 50%;
+  align-self: center;
 }
 .hero-left h1 {
   color: #fff;
@@ -68,6 +69,7 @@ body {
 .hero-right {
   flex-basis: 50%;
   text-align: center;
+  align-self: flex-end;
 }
 .hero-right img {
   max-width: 59rem;
@@ -78,55 +80,48 @@ body {
   display: flex;
   gap: 2.4rem;
   margin-top: 13rem;
+  margin-bottom: 13rem;
 }
-/* .main-left {
+
+.main-left {
   background-color: #161616;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  min-width: 31.2rem;
+  justify-content: space-between;
+  width: 31.2rem;
   height: 31.2rem;
-  width: 100%;
   border-radius: 10px;
-  align-self: start;
-} */
-.main-left .upcoming {
-  padding: 1.7rem 3.9rem;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  border-radius: 10px;
+  padding: 3rem;
 }
-.main-left .group {
-  padding: 1.7rem 7.28rem;
+.main-left button {
+  padding: 1.7rem 0;
+  width: 25.2rem;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
   border-radius: 10px;
+  border: none;
 }
 .main-left .blog {
   background-color: #dd0000;
   color: #fff;
-  padding: 1.7rem 9.3rem;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  border-radius: 10px;
 }
+
 .main-right {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, calc((100% / 3) - 1.6rem));
   grid-gap: 2.4rem;
 }
 .main-right .card {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border: 1px solid #e8e8e8;
   border-radius: 10px;
-  width: 100%;
 }
 .main-right .card .card-body {
   padding: 2rem;
+}
+.main-right .card img {
+  width: 100%;
 }
 .main-right .card .card-body button {
   background-color: transparent;
@@ -156,28 +151,43 @@ body {
 .main-right .card .card-body .count span {
   margin: 0 3rem 0 1rem;
 }
-/* Fixture Section Styling */
-.card-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 53px 30px 20px 30px;
-  gap: 1rem;
+/* Footer CSS */
+.footer {
+  background-color: #000;
+  padding: 13rem 0 11rem;
+}
+.footer-logo {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5rem;
 }
 
-.main-right .card .card-body h4 {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
+.footer-link {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
-  color: #161616;
 }
-.main-right .card .card-body p {
-  font-weight: 400;
+.footer-link li {
+  flex-basis: 15rem;
+  margin-bottom: 2rem;
+}
+.footer-link a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #4d4d4d;
+  color: #b9b9b9;
+  transition: all 0.3s ease-in-out;
+}
+.footer-link a:hover {
+  color: #dd0000;
 }
 /* Tablet Button styling */
 .tab-btn {
