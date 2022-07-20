@@ -189,3 +189,20 @@ body {
 .footer-link a:hover {
   color: #dd0000;
 }
+/* Tablet Button styling */
+.tab-btn {
+  text-align: center;
+}
+.tablet-button {
+  display: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #dd0000;
+  border-radius: 5px;
+  padding: 1.2rem 1.9rem;
+  border: none;
+  cursor: pointer;
+}
