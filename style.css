@@ -103,6 +103,10 @@ body {
   border: none;
   text-align: center;
   text-decoration: none;
+  background-color: #fff;
+  color: black;
+  border: 1px solid #161616;
+  margin: auto;
 }
 .main-left .active {
   background-color: #dd0000;
@@ -207,10 +211,28 @@ body {
   text-align: center;
   color: #161616;
 }
-.main-right .card .card-body p {
+.fixture-main .card .card-body p {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #4d4d4d;
+}
+/* Tablet Button styling */
+.tab-btn {
+  display: flex;
+  justify-content: center;
+}
+.tablet-button {
+  display: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #dd0000;
+  border-radius: 5px;
+  padding: 1.2rem 1.9rem;
+  border: none;
+  cursor: pointer;
 }

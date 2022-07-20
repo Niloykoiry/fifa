@@ -9,6 +9,13 @@
     font-size: 55%;
   } */
   .main {
+    margin-bottom: 5rem;
+  }
+  .tablet-button {
+    display: block;
+    margin-bottom: 5rem;
+  }
+  .main {
     flex-direction: column;
   }
   .main-left {
@@ -23,6 +30,12 @@
   }
 }
 @media only screen and (max-width: 576px) {
+  .main {
+    margin-bottom: 13rem;
+  }
+  .tablet-button {
+    display: none;
+  }
   .main-left {
     flex-direction: column;
   }
