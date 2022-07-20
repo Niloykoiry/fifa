@@ -222,6 +222,7 @@ body {
 .tab-btn {
   display: flex;
   justify-content: center;
+
 }
 .tablet-button {
   display: none;
